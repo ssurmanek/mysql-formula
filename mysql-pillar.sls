@@ -1,8 +1,4 @@
 mysql:
-  global:
-    client-server:
-      default_character_set: utf8
-
   clients:
     mysql:
       default_character_set: utf8
@@ -49,24 +45,6 @@ mysql:
   schema:
       dp_db:
       load: False
-    baz:
-      load: True
-      source: salt://mysql/files/baz.schema.tmpl
-      template: jinja
-    qux:
-      load: True
-      source: salt://mysql/files/qux.schema.tmpl
-      template: jinja
-      context:
-        encabulator: Turbo
-        girdlespring: differential
-    quux:
-      load: True
-      source: salt://mysql/files/qux.schema.tmpl
-      template: jinja
-      context:
-        encabulator: Retro
-        girdlespring: integral
 
   # Install MySQL headers
   dev:
