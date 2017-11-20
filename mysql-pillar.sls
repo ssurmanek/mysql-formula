@@ -16,7 +16,7 @@ mysql:
       dp_db:
       load: False
   user:
-    slavo-sql:
+    root:
       password: 'secret'
       host: localhost
       databases:
