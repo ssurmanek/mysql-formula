@@ -26,7 +26,13 @@ mysql:
   schema:
       dp_db:
       load: False
-
+  user:
+    slavo-sql:
+      password: 'secret'
+      host: localhost
+      databases:
+        - database: dp_db
+          grants: ['all privileges']
   # Install MySQL headers
   dev:
     # Install dev package - defaults to False
