@@ -10,7 +10,7 @@ mysql:
       default_character_set: utf8
   server:
     # Use this account for database admin (defaults to root)
-    root_user: 'admin'
+    root_user: 'slavo'
     root_password: 'secret'
     root_password_hash: '*8EEEB203A36B7E305C135CC82C9C16982072921E'
     mysqld:
@@ -36,7 +36,7 @@ mysql:
       load: False
   user:
     slavo:
-      password: 'secret'
+      password_hash: '*8EEEB203A36B7E305C135CC82C9C16982072921E'
       host: localhost
       databases:
         - database: dp_db
