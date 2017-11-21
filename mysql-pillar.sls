@@ -12,6 +12,7 @@ mysql:
     # Use this account for database admin (defaults to root)
     root_user: 'admin'
     root_password: 'secret'
+    root_password_hash: '*8EEEB203A36B7E305C135CC82C9C16982072921E'
     mysqld:
       # you can use either underscore or hyphen in param names
       bind-address: 0.0.0.0
