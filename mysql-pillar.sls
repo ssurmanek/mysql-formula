@@ -30,16 +30,16 @@ mysql:
       
   # Manage databases
   database:
-    - dp_db
+    - dpdatab
   schema:
-      dp_db:
-      load: False
+      dpdatabase:
+        load: False
   user:
     slavo:
-      password_hash: '*14E65567ABDB5135D0CFD9A70B3032C179A49EE7'
+      password: 'secret'
       host: localhost
       databases:
-        - database: dp_db
+        - database: dpdatabase
           grants: ['all privileges']
   # Install MySQL headers
   dev:
