@@ -12,7 +12,6 @@ mysql:
     # Use this account for database admin (defaults to root)
     root_user: 'root'
     root_password: 'secret'
-    root_password_hash: '*14E65567ABDB5135D0CFD9A70B3032C179A49EE7'
     mysqld:
       # you can use either underscore or hyphen in param names
       bind-address: 0.0.0.0
@@ -23,7 +22,7 @@ mysql:
       no-auto-rehash: noarg_present
 
   salt_user:
-    salt_user_name: 'slavo'
+    salt_user_name: 'root'
     salt_user_password: 'secret'
     grants:
       - 'all privileges'
